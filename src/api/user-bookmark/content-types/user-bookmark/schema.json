@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_bookmarks",
+  "info": {
+    "singularName": "user-bookmark",
+    "pluralName": "user-bookmarks",
+    "displayName": "UserBookmark"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "user_bookmarks"
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog.blog",
+      "inversedBy": "user_bookmarks"
+    }
+  }
+}

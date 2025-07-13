@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "poll_options",
+  "info": {
+    "singularName": "poll-option",
+    "pluralName": "poll-options",
+    "displayName": "PollOption"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "optionText": {
+      "type": "string",
+      "required": true
+    },
+    "votes": {
+      "type": "integer"
+    }
+  }
+}
