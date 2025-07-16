@@ -28,23 +28,16 @@
         "audios"
       ]
     },
-    "blogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog",
-      "mappedBy": "author"
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
     },
-    "comments": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "author"
-    },
-    "user_bookmarks": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::user-bookmark.user-bookmark",
-      "mappedBy": "author"
+    "password": {
+      "type": "password",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 25
     }
   }
 }
